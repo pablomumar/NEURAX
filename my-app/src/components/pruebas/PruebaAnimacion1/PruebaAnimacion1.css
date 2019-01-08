@@ -1,0 +1,13 @@
+.marcoPrueba1{
+    padding: 75px 40px;
+    vertical-align: bottom;
+}
+
+@keyframes ampliar {
+    from {width: 0;}
+    to {width: calc(14600px/73);}
+}
+@keyframes desampliar {
+    from {width: calc(14600px/73);}
+    to {width: 0;}
+}

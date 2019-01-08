@@ -1,0 +1,9 @@
+.marcoPrueba2{
+    padding: 75px 40px;
+    vertical-align: bottom;
+}
+
+@keyframes ampliar {
+    from {width: 0;}
+    to {width: calc(14600px/73);}
+}
