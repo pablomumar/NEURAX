@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './PruebaHeader.css';
+// import './PruebaHeader.css';
+import classes from './PruebaHeader.module.css';
 import Auxiliar from '../../hoc/Auxiliar/Auxilar';
 import LogoCuadrado from '../../../assets/logos/cuadraoSimple.png';
 // import PruebaHeaderImg from '../../../assets/pruebaheader.png';
@@ -9,8 +10,8 @@ class PruebaHeader extends Component {
     render() {
         return (
             <Auxiliar>
-                <div className="pruebaheader">
-                    <div className='headerIn'>
+                <div className={classes.pruebaheader}>
+                    <div className={classes.headerIn}>
                         <div>
                             <p>Link 1</p>
                         </div>
@@ -18,10 +19,10 @@ class PruebaHeader extends Component {
                             <p>Link 2</p>
                         </div>
                     </div>
-                    <div className='mancha'>
-                        <img src={LogoCuadrado} alt="" className='anim'/>
+                    <div className={classes.mancha}>
+                        <img src={LogoCuadrado} alt="" className={classes.anim}/>
                     </div>
-                    <div className='headerIn'>
+                    <div className={classes.headerIn}>
                         <div>
                             <p>Link 3</p>
                         </div>

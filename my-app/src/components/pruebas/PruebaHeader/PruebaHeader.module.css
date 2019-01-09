@@ -1,0 +1,103 @@
+.pruebaheader{
+    background-color: black;
+    height: 480px;
+    width: 100%;
+    display: inline-flex;
+}
+
+.pruebaheader div{
+    width: calc(100%/3);
+    height: 450px;
+}
+
+.mancha img{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: 32%;
+    top: 32%;
+}
+
+.headerIn div{
+    width: 50%;
+    position: relative;
+    display: inline-flex;
+}
+
+.headerIn p{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.headerIn p:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.headerIn p:hover{
+    font-size: 25px;
+    top: calc(40% - 3px);
+    left: calc(50% - 2px);
+    transition: 1s;
+}
+
+.headerIn p:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.mancha{
+    background-image: url('../../../assets/pruebaheader.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+}
+
+.anim{
+    animation: spin1 5s infinite, moving 5s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes spin1 {
+    0% {height:150px; width: 150px; transform:rotate(0deg);}
+    10% {height:200px; width: 200px; transform:rotate(10deg);}
+    15% {height:220px; width: 220px; transform:rotate(30deg);}
+    25% {height:220px; width: 220px; transform:rotate(45deg);}
+    40% {height:220px; width: 220px; transform:rotate(60deg);}
+    45% {height:200px; width: 200px; transform:rotate(80deg);}
+    50% {height:150px; width: 150px; transform:rotate(90deg);}
+    100% {height:150px; width: 150px; transform:rotate(90deg);}
+}
+
+@keyframes moving {
+    0% {}
+    10% {left: calc(32% - 30px);top: calc(32% - 30px)}
+    25% {left: calc(32% - 30px);top: calc(32% - 30px)}
+    40% {left: calc(32% - 30px);top: calc(32% - 30px)}
+    50% {left: 32%;top: 32%;}
+    70% {left: 32%;top: 32%;}
+    72% {left: 20%;top: 25%;}
+    78% {left: 45%;top: 15%;}
+    82% {left: 20%;top: 45%;}
+    90% {left: 50%;top: 30%;}
+    95% {left: 52%;top: 50%;}
+    100% {left: 32%;top: 32%;}
+}
