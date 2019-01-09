@@ -1,0 +1,16 @@
+.fondoBlack{
+    background-color: black;
+}
+
+.fondoWhite{
+    background-color: #fff;
+}
+
+.mainFrame{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.paddingLatNVert{
+    padding: 10vh 11vw;
+}
