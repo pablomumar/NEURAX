@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import  {Route} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 
 import Auxiliar from '../../hoc/Auxiliar/Auxilar';
 import classes from './MainCont.module.css';
