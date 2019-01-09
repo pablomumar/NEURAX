@@ -14,7 +14,7 @@ class MainCont extends Component {
             <Auxiliar>
                 <Route path='/' exact render={() => (
                     <Auxiliar>
-                        <div className={[classes.mainFrame, classes.paddingLatNVert, classes.fondoWhite].join(' ')}>
+                        <div>
                             <MenuHome/>
                         </div>
                     </Auxiliar>

@@ -1,0 +1,13 @@
+.mainCont>div{
+    height: 50vh;
+    position: relative;
+}
+
+.mainCont>div>h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
