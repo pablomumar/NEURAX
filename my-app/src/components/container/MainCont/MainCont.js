@@ -17,9 +17,9 @@ class MainCont extends Component {
                         <MenuHome/>
                     </Auxiliar>
                 )}/>
-               <Route path='/Colecciones' exact component={Colecciones}/>
-               <Route path='/Bio' exact component={Bio}/>
-               <Route path='/Redes' exact component={Redes}/>
+               <Route path='/colecciones' exact component={Colecciones}/>
+               <Route path='/bio' exact component={Bio}/>
+               <Route path='/redes' exact component={Redes}/>
             </Auxiliar>
         );
     }

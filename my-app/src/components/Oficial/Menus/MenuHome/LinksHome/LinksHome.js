@@ -16,7 +16,7 @@ const LinksHome = (props) => {
     return (
         <Auxiliar>
             <div className={['col-md-6', classes.posicionLink].join(' ')}>
-                <Link to={'/' + props.nombreComponent} style={style}>
+                <Link to={props.nombreComponent} style={style}>
                     {props.children}
                 </Link>
             </div>

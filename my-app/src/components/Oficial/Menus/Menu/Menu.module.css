@@ -1,0 +1,35 @@
+.menuPrinc{
+    width: 100%;
+    min-height: 10px;
+    height: 18vh;
+    background-color: black;
+    color: whitesmoke;
+    display: inline-flex;
+}
+
+.menuPrinc .contLogoMenu{
+    width: 20%;
+    height: 100%;
+}
+
+.menuPrinc>div:first-child, .menuPrinc>div:last-child{
+    width: 40%;
+    height: 100%;
+    display: inline-flex;
+}
+
+.menuPrinc .item{
+    width: 50%;
+    position: relative;
+}
+
+.menuPrinc .item a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 3px;
+}

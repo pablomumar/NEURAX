@@ -11,10 +11,10 @@ class MenuHome extends Component{
             <Auxiliar>
                 <div className='container-fluid'> {/* Meter logo y animaciones en fixed*/}
                     <div className={[classes.mainCont, 'row'].join(' ')}>
-                        <LinksHome topPerc={40} leftPerc={40} transTop={-50} transLeft={-50} nombreComponent='Redes'>Contacto</LinksHome>
-                        <LinksHome topPerc={40} leftPerc={60} transTop={-50} transLeft={-50} nombreComponent='Bio'>Bio</LinksHome>
-                        <LinksHome topPerc={60} leftPerc={40} transTop={-50} transLeft={-50} nombreComponent='Colecciones'>Colecciones</LinksHome>
-                        <LinksHome topPerc={60} leftPerc={60} transTop={-50} transLeft={-50} nombreComponent='Bio'>Tienda</LinksHome>
+                        <LinksHome topPerc={40} leftPerc={40} transTop={-50} transLeft={-50} nombreComponent='/redes'>Contacto</LinksHome>
+                        <LinksHome topPerc={40} leftPerc={60} transTop={-50} transLeft={-50} nombreComponent='/bio'>Bio</LinksHome>
+                        <LinksHome topPerc={60} leftPerc={40} transTop={-50} transLeft={-50} nombreComponent='/colecciones'>Colecciones</LinksHome>
+                        <LinksHome topPerc={60} leftPerc={60} transTop={-50} transLeft={-50} nombreComponent='/bio'>Tienda</LinksHome>
                     </div>
                 </div>
             </Auxiliar>
