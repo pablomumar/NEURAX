@@ -2,27 +2,19 @@ import React, {Component} from 'react';
 import {Link} from 'react-router';
 
 import classes from './MenuHome.module.css';
+import LinksHome from './LinksHome/LinksHome';
 import Auxiliar from '../../../hoc/Auxiliar/Auxilar';
 
 class MenuHome extends Component{
     render(){
         return (
             <Auxiliar>
-                <div className='container-fluid'> {/* Meter clase para el logo en el centro (con absolute y eso)*/}
+                <div className='container-fluid'> {/* Meter logo y animaciones en fixed*/}
                     <div className={[classes.mainCont, 'row'].join(' ')}>
-                        <div className='col-md-6'>  {/* Cada div sera una funcion para los distintos links con props para el absolute del Link*/}
-                            <h1>MenuH1</h1>
-                        </div>
-                        <div className='col-md-6'>
-                            <h1>MenuH2</h1>
-                        </div>
-                        <div className='col-md-6'>
-                            <h1>MenuH3</h1>
-                        </div>
-                        <div className='col-md-6'>
-                            <h1>MenuH4</h1>
-                        </div>
-
+                        <LinksHome topPerc={40} leftPerc={40} transTop={-50} transLeft={-50} nombreComponent='Redes'>Contacto</LinksHome>
+                        <LinksHome topPerc={40} leftPerc={60} transTop={-50} transLeft={-50} nombreComponent='Bio'>Bio</LinksHome>
+                        <LinksHome topPerc={60} leftPerc={40} transTop={-50} transLeft={-50} nombreComponent='Colecciones'>Colecciones</LinksHome>
+                        <LinksHome topPerc={60} leftPerc={60} transTop={-50} transLeft={-50} nombreComponent='Bio'>Tienda</LinksHome>
                     </div>
                 </div>
             </Auxiliar>

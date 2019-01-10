@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Route} from 'react-router-dom';
 
 import Auxiliar from '../../hoc/Auxiliar/Auxilar';
-import classes from './MainCont.module.css';
+// import classes from './MainCont.module.css';
 import MenuHome from '../../../components/Oficial/Menus/MenuHome/MenuHome';
 import Colecciones from '../../../components/Oficial/Pages/Colecciones/Colecciones';
 import Bio from '../../../components/Oficial/Pages/Bio/Bio';
@@ -14,9 +14,7 @@ class MainCont extends Component {
             <Auxiliar>
                 <Route path='/' exact render={() => (
                     <Auxiliar>
-                        <div>
-                            <MenuHome/>
-                        </div>
+                        <MenuHome/>
                     </Auxiliar>
                 )}/>
                <Route path='/Colecciones' exact component={Colecciones}/>
