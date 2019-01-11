@@ -5,6 +5,8 @@ import classes from './Menu.module.css';
 import Auxiliar from '../../../hoc/Auxiliar/Auxilar';
 import Links from './Links/Links';
 
+import logo from '../../../../assets/logos/cuadraoSimple.png'
+
 class Menu extends Component{
     render(){
         return (
@@ -16,7 +18,10 @@ class Menu extends Component{
                     </div>
 
                     <div className={classes.contLogoMenu}>
-                        <Links clase={classes.item} nombreComponent={'/'}>ph</Links>
+                        <div className={classes.item}>
+                            <Link to='/'><img src={logo} alt=""/></Link>
+                        </div>
+                        <div className={classes.backgLogo}> </div>
                     </div>
 
                     <div>

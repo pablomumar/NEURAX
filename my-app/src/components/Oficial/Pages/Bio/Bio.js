@@ -30,7 +30,7 @@ class Bio extends Component{
                             <img src={placeholder} alt=""/>
                         </div>
                         <div className={["col-md-12", classes.anim].join(' ')}>
-                            <h1>sjdflnakjdsfnl</h1>
+                            <h1>(Espacio para animacion NEURAX partiendo de cuadrado)</h1>
                         </div>
                     </div>
                 </div>

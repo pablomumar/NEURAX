@@ -1,11 +1,11 @@
 .textoBio{
-    margin-top: 40px;
-    padding: 40px 160px;
+    margin-top: 80px;
+    padding: 30px 160px;
 }
 
 .textoBio p{
     color: white;
-    line-height: 26px;
+    line-height: 30px;
     letter-spacing: 4px;
     font-weight: 200;
     font-size: 14px;
@@ -38,4 +38,6 @@
 
 .anim{
     height: 500px;
+    padding: 180px 120px;
+    text-align: center;
 }
