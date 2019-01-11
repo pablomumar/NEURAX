@@ -1,0 +1,41 @@
+.textoBio{
+    margin-top: 40px;
+    padding: 40px 160px;
+}
+
+.textoBio p{
+    color: white;
+    line-height: 26px;
+    letter-spacing: 4px;
+    font-weight: 200;
+    font-size: 14px;
+    text-align: center;
+}
+
+.redes{
+    margin: 30px 0;
+    padding: 50px 380px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.redes img, .redes a{
+    width: 45px;
+    height: auto;
+}
+
+.imgBio{
+    background-color: white;
+    margin: 50px auto;
+    padding: 10px 120px;
+}
+
+.imgBio img{
+    width: 100%;
+    height: auto;
+    padding: 0 34%;
+}
+
+.anim{
+    height: 500px;
+}

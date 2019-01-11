@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 
 import classes from './Menu.module.css';
 import Auxiliar from '../../../hoc/Auxiliar/Auxilar';
+import Links from './Links/Links';
 
 class Menu extends Component{
     render(){
@@ -10,25 +11,17 @@ class Menu extends Component{
             <Auxiliar>
                 <div className={classes.menuPrinc}>
                     <div>
-                        <div className={classes.item}>
-                            <Link to='/bio'>Bio</Link>
-                        </div>
-                        <div className={classes.item}>
-                            <Link to='/redes'>Redes</Link>
-                        </div>
+                        <Links clase={classes.item} nombreComponent={'/bio'}>Bio</Links>
+                        <Links clase={classes.item} nombreComponent={'/redes'}>Redes</Links>
                     </div>
 
                     <div className={classes.contLogoMenu}>
-
+                        <Links clase={classes.item} nombreComponent={'/'}>ph</Links>
                     </div>
 
                     <div>
-                        <div className={classes.item}>
-                            <Link to='/colecciones'>Colecciones</Link>
-                        </div>
-                        <div className={classes.item}>
-                            <Link to='/bio'>Shop</Link>
-                        </div>
+                        <Links clase={classes.item} nombreComponent={'/colecciones'}>Colecciones</Links>
+                        <Links clase={classes.item} nombreComponent={'/bio'}>Shop</Links>
                     </div>
                 </div>
             </Auxiliar>
