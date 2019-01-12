@@ -7,6 +7,7 @@ import MenuHome from '../../../components/Oficial/Menus/MenuHome/MenuHome';
 import Colecciones from '../../../components/Oficial/Pages/Colecciones/Colecciones';
 import Bio from '../../../components/Oficial/Pages/Bio/Bio';
 import Redes from '../../../components/Oficial/Pages/Redes/Redes';
+import Error from '../../../components/Oficial/Error/Error';
 
 class MainCont extends Component {
     render() {
@@ -20,6 +21,7 @@ class MainCont extends Component {
                <Route path='/colecciones' exact component={Colecciones}/>
                <Route path='/bio' exact component={Bio}/>
                <Route path='/redes' exact component={Redes}/>
+               <Route path='/none' exact component={Error}/>
             </Auxiliar>
         );
     }

@@ -26,7 +26,7 @@ class Menu extends Component{
 
                     <div>
                         <Links clase={classes.item} nombreComponent={'/colecciones'}>Colecciones</Links>
-                        <Links clase={classes.item} nombreComponent={'/bio'}>Shop</Links>
+                        <Links clase={classes.item} nombreComponent={'/none'}>Shop</Links>
                     </div>
                 </div>
             </Auxiliar>
