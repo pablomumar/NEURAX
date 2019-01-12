@@ -7,4 +7,43 @@
     position: relative;
 }
 
+.contFixedLogo{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+.contFixedLogo img{
+    margin-left: 6px; /*quitar cuando se cuadre el logo*/
+    width: 16vw;
+    height: auto;
+}
+
+.fondoBlanco{
+    background-color: whitesmoke;
+    width: 38vw;
+    height: 38vw;
+    z-index: -1;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.giroPrueba{
+    transform: translate(-50%, -50%) rotate(90deg) !important;
+}
+
+.extraPrueba{
+    background-color: whitesmoke;
+    /*border-top: 1px #ccc dashed;*/
+    /*border-bottom: 1px #ccc dashed;*/
+    width: 100vw;
+    height: 3px;
+    z-index: -2;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
