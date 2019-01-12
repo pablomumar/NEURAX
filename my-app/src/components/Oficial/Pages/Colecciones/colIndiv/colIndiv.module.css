@@ -1,0 +1,93 @@
+.contModal{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    overflow: hidden;
+    margin: auto;
+}
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 90px;
+    font-weight: 900;
+    color: white;
+}
+
+.backgroundW{
+    background-color: whitesmoke;
+    width: 68%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.backgroundW>div{
+    background-color: transparent;
+    width: 110%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contenidoCosas{
+    width: 100%;
+    padding: 30px 60px;
+    text-align: center;
+}
+
+.contenidoCosas .titulo{
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    max-height: 6vh;
+}
+
+.contenidoCosas .subtitulo{
+    padding: 30px 40px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    line-height: 24px;
+    max-height: 22vh;
+}
+
+.contenidoCosas .contSlider{
+    min-height: 68vh;
+    max-height: 72vh;
+    width: 100%;
+}
+
+.sliderTop{
+    height: calc((70vh*60)/100);
+    margin-top: 28vh;
+}
+
+.sliderBot{
+    height: calc((70vh*32)/100) !important;
+}
+
+.imagenSlider{
+    background-color: #dddddd;
+    height: 90%;
+}
+
+.descSlider{
+    background-color: #bbbbbb;
+    height: 90%;
+}
+
+.articulo{
+    height: 50%;
+    width: calc(100%/6);
+    float: left;
+}
+.articulo>div{
+    background-color: #eeeeee;
+    height: 96%;
+    width: calc(100%*.94);
+    margin: auto;
+}

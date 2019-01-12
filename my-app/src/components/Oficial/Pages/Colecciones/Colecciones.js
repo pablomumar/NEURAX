@@ -3,13 +3,33 @@ import React, {Component} from 'react';
 import classes from './Colecciones.module.css';
 import Auxiliar from '../../../hoc/Auxiliar/Auxilar';
 import Menu from '../../Menus/Menu/Menu';
+import Modal from '../../../UI/Modal/Modal';
+import ColIndiv from '../Colecciones/colIndiv/colIndiv';
 
 import logo from '../../../../assets/logos/cuadraoSimple.png';
 
 class Colecciones extends Component{
+    state = {
+      showModal: false
+    };
+
+    showModal = () => {
+        this.setState({showModal: true});
+    };
+
+    closeModal = () => {
+        this.setState({showModal: false});
+    };
+
     render(){
         return (
             <Auxiliar>
+                {this.state.showModal ?
+                    <Modal closeModal={this.closeModal}>
+                       <ColIndiv
+                           closeModal={this.closeModal}
+                       />
+                    </Modal> : null}
                 <Menu/>
                 <div className='container'>
                     <div className={[classes.content].join(' ')}>
@@ -32,7 +52,7 @@ class Colecciones extends Component{
                                     <div className={[classes.colInd, 'col-md-2'].join(' ')}>ph</div>
                                     <div className={[classes.colInd, 'col-md-2'].join(' ')}>ph</div>
                                 </div>
-                                <img src={logo} alt=""/>
+                                <img src={logo} alt="" onClick={this.showModal}/>
                             </div>
                         </div>
                     </div>
